@@ -23,13 +23,22 @@ body {
     background: white;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
 }
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 15px;
+/* Input Field */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
 }
 
+/* Buttons */
 button {
     background: #3498db;
     color: white;
@@ -39,10 +48,20 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
+    margin: 5px;
 }
 
 button:hover {
     background: #2980b9;
+}
+
+/* Stop Color Button - Different Style */
+#stopColorBtn {
+    background: #e74c3c;
+}
+
+#stopColorBtn:hover {
+    background: #c0392b;
 }
 
 p {

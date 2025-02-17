@@ -9,9 +9,17 @@
 <body>
 
     <div class="container">
-        <h1>Background Color Changer</h1>
-        <button id="colorBtn">Change Color</button>
-        <p>Click the button to generate a new background color!</p>
+        <h1 id="textChange">Background Color Changer</h1>
+        
+        <!-- Input for Hex Color -->
+        <input type="text"  id="colorInput" placeholder="Enter Hex Code (e.g. #ff5733)">
+        
+        <!-- Buttons -->
+        <button id="colorBtn">Random Color</button>
+        <button id="applyColorBtn">Apply Color</button>
+        <button id="stopColorBtn">Stop Color</button>
+
+        <p>Click "Random Color" for a new color, enter a hex code and click "Apply Color", or stop the color changes.</p>
     </div>
 
     <script src="./script.js"></script>
