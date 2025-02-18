@@ -35,14 +35,13 @@ hexColorCodeGenerator = () => {
   titleText.textContent = `Current Color: ${color}`;
   color = "#";
   console.log(color, "color");
-  randomColorBtn.disabled = true
+  randomColorBtn.disabled = true;
 };
 
 randomColorBtn.addEventListener("click", () => {
   setTimeout(() => {
     intervalID = setInterval(() => {
       hexColorCodeGenerator();
-    
     }, 1000);
   }, 1000);
 });
@@ -51,7 +50,7 @@ stopColorBtn.addEventListener("click", () => {
   clearInterval(intervalID);
   console.log(intervalID); // Stop the interval
   intervalID = null; // Reset interval ID
-  randomColorBtn.disabled = false
+  randomColorBtn.disabled = false;
 
   console.log("Color change stopped.");
 });
